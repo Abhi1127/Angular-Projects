@@ -1,0 +1,102 @@
+
+
+<div class="main">
+  <div class="container">
+  <div class="header">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h1>BookMyShow</h1>
+      </div>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+       <input
+       type="text"
+       placeholder="Search Your Fav Movies"
+       name="search"
+       [(ngModel)]="term"
+       >
+      </div>
+    </div>
+  
+    <table class="table">
+      <thead>
+        <tr>
+          <th>List</th>
+          <th>Title</th>
+          <th>Status</th>
+          <th>Ticket Price</th>
+          <th>Cast</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr *ngFor="let booka of book | filter:term">
+          <td>{{booka.muvid}}</td>
+          <td><a [routerLink]="['/don',booka.muvid]" > {{booka.header}}</a> </td>
+          <td> {{booka.ReleaseStatus}} </td>
+          <td> {{booka.Price}} </td>
+          <td> {{booka.cast}} </td>
+        </tr>
+      </tbody>
+    </table>
+
+    
+</div>
+
+
+</div>
+
+
+
+<div class="container">
+   
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./assets/chi.jpg" alt="Los Angeles" style="width:100%;" class="img-responsive">
+        <div class="carousel-caption">
+          <h3>Chi Va Chi Sau KA</h3>
+          <p>Realising on 2nd OCt 2017</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./assets/bahus.jpg" alt="Chicago" style="width:100%;" class="img-responsive">
+        <div class="carousel-caption">
+          <h3>Bahubali 2</h3>
+          <p>Realising on 2nd OCt 2017</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="./assets/fene.jpg" alt="New york" style="width:100%;" class="img-responsive">
+        <div class="carousel-caption">
+          <h3>Faster Fene</h3>
+          <p>Realising on 2nd OCt 2017</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+

@@ -1,0 +1,54 @@
+[{
+    "muvid":1,
+    "title":"Sports S",
+    "cast":"Tapasee Panu",
+    "ReleaseStatus": "Released",
+    "Price":"150/-",
+    "src":"./../assets/shaba.jpg",
+    "rating":"4",
+    "header":"Naam Shabana",
+    "Date":"11/10/2017",
+    "src1":"./../assets/shaba1.jpg",
+    "src2":"./../assets/shaba2.jpg"
+},
+{
+    "muvid":2,
+    "title":"Sports S",
+    "cast":"Mrinmayee Godbole",
+    "ReleaseStatus": "Released",
+    "Price":"120/-",
+    "src":"./../assets/chi.jpg",
+    "rating":"4",
+    "header":"Chi va Chi Sau KA",
+    "Date":"11/10/2017",
+    "src1":"./../assets/chi1.jpg",
+    "src2":"./../assets/chi2.jpg"
+},
+{
+    "muvid":3,
+    "title":"Sports S",
+    "cast":"Amey wagh",
+    "ReleaseStatus": "Released",
+    "Price":"120/-",
+    "src":"./../assets/fene.jpg",
+    "rating":"4",
+    "header":"Faster Fene",
+    "Date":"11/10/2017",
+    "src1":"./../assets/fene1.jpg",
+    "src2":"./../assets/fene2.jpg"
+},
+
+{
+    "muvid":4,
+    "title":"Sports S",
+    "cast":"Rana Dugubatti",
+    "ReleaseStatus": "Released",
+    "Price":"240/-",
+    "src":"./../assets/bahus.jpg",
+    "rating":"4",
+    "header":"Bahubali 2 : The Conclusion ",
+    "Date":"11/10/2017",
+    "src1":"./../assets/bahus1.jpg",
+    "src2":"./../assets/bahus2.jpg"
+}
+]

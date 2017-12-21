@@ -1,0 +1,25 @@
+
+<div class="panel panel-default" *ngIf="product">
+  <div class="panel-heading h" >
+    <h1>{{product.header}}</h1>
+  </div>
+  <div class="panel-body" >
+    <!-- <img src={{product.src}} class="img-responsive"> -->
+  
+       
+    
+    <div [ngSwitch]="viewmode">
+      <img *ngSwitchCase = "'chi'" [src]="product.src">
+      <img *ngSwitchCase = "'sau'" [src]="product.src1">
+      <img *ngSwitchCase = "'ka'" [src]="product.src2">
+    </div>
+
+    <button (click)="viewmode='chi'" class="btn-btn-danger btn-md" ><img [src]="product.src" class="img-responsive imgh"></button>
+    <button (click)="viewmode='sau'" class="btn-btn-danger btn-md" ><img [src]="product.src1" class="img-responsive imgh"></button>
+    <button (click)="viewmode='ka'" class="btn-btn-danger btn-md" ><img [src]="product.src2" class="img-responsive imgh"></button>
+  </div>
+  <div class="panel-footer f">
+    <h3> Cast: {{product.cast}}</h3>
+    <button class="btn btn-lg btn-success button1">Book Your Tickets Here</button>
+  </div>
+</div>

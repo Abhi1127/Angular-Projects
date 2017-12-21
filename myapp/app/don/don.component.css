@@ -1,0 +1,45 @@
+.button1{
+    position:  relative;
+    left: 850px;top: -40px;
+    color: black;
+    height: 80px;
+    width: 250px;
+}
+.button1:hover{
+    background: rgb(35, 83, 172);
+    transition: all 0.5s ease-in-out 0s;
+    color: rgb(255, 191, 16);
+    transform: rotate(-10deg) translateX(5px) scale(1.2);
+
+}
+button{
+    width: 100px;
+    height: 100px;
+}
+img{
+    width: 700px;
+    height: 500px;
+}
+.imgh{
+    height: 80px;
+    width:100px;
+}
+a:hover{
+    color: red;
+}
+.h{
+background: linear-gradient(rgb(17, 15, 15),gray);
+}
+h1{
+    color: greenyellow;
+    font-family: 'Vollkorn SC', serif;
+    text-shadow: 2px 0px 9px cornflowerblue;
+}
+.f{
+    background: linear-gradient(gray,black);
+}
+h3{
+    color:greenyellow;
+    font-size: 35px;
+    text-shadow: 2px 0px 9px cornflowerblue;
+}
